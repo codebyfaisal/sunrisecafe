@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+carouselItems.forEach((item, index) => {
+  item.style.height = "100vh";
+  item.style.backgroundImage = `url(./images/hero/hero-${index}.jpg)`; // Ensure the path is correct
+  item.style.backgroundColor = "rgba(0,0,0,0.8)";
+  item.style.backgroundRepeat = "no-repeat";
+  item.style.backgroundSize = "cover";
+  item.style.backgroundPosition = "center";
+});
+
 // Menu elements
 const menuImages = document.querySelectorAll("#menu .menu-item img");
 const menuNames = document.querySelectorAll("#menu .menu-item .menu-title");
