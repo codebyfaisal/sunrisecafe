@@ -238,7 +238,7 @@ nav.navbar {
 }
 
 #reviews {
-  background: linear-gradient(to right, #000000b6, #6363639a), url(../images/reviews/bg-review.jpg);
+  background: linear-gradient(to right, #000000b6, #6363639a), url(../images/reviews/bg-review.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -380,7 +380,7 @@ input::-webkit-calendar-picker-indicator {
 
 /* Footer */
 footer {
-  background: linear-gradient(to right, rgba(0, 79, 85, 0.8), #030f0aa8), url(../images/footer.jpg);
+  background: linear-gradient(to right, rgba(0, 79, 85, 0.8), #030f0aa8), url(../images/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: max-content;

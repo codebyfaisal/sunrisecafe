@@ -7,7 +7,7 @@ const iconSpan = navbarToggler.querySelector('span');
 document.addEventListener('DOMContentLoaded', function () {
   carouselItems.forEach((item, index) => {
     item.style.height = "100vh";
-    item.style.backgroundImage = `url(./images/hero/hero-${index}.jpg)`; // Ensure the path is correct
+    item.style.backgroundImage = `url(./images/hero/hero-${index}.png)`; // Ensure the path is correct
     item.style.backgroundColor = "rgba(0,0,0,0.8)";
     item.style.backgroundRepeat = "no-repeat";
     item.style.backgroundSize = "cover";
@@ -70,10 +70,10 @@ if (menuImages.length === menuNames.length) {
   menuImages.forEach((img, index) => {
     const src = img.getAttribute("src");
     const fileName = src.split('/').pop();
-    const nameWithoutExtension = fileName.split('.')[0];
+    const nameWithoutExtension = fileName.split('.')[ 0 ];
     const menuItemName = nameWithoutExtension.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-    menuNames[index].innerHTML = menuItemName;
+    menuNames[ index ].innerHTML = menuItemName;
   });
 } else {
   console.error("The number of menu images and menu titles do not match.");
