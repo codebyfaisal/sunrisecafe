@@ -1,9 +1,19 @@
 // DOM elements
-const message = document.getElementById("message");
-const textarea = document.querySelector("#form textarea");
 const carouselItems = document.querySelectorAll("#home .carousel-item");
 const navbarToggler = document.querySelector('.navbar-toggler');
 const iconSpan = navbarToggler.querySelector('span');
+
+// Style carousel items
+document.addEventListener('DOMContentLoaded', function () {
+  carouselItems.forEach((item, index) => {
+    item.style.height = "100vh";
+    item.style.backgroundImage = `url(./images/hero/hero-${index}.jpg)`; // Ensure the path is correct
+    item.style.backgroundColor = "rgba(0,0,0,0.8)";
+    item.style.backgroundRepeat = "no-repeat";
+    item.style.backgroundSize = "cover";
+    item.style.backgroundPosition = "center";
+  });
+});
 
 // Menu elements
 const menuImages = document.querySelectorAll("#menu .menu-item img");
@@ -14,6 +24,8 @@ let lastMenuItem = 0;
 // Function to hide menu items
 function menuHider(start) {
   const activeTabPane = document.querySelector("#menu .tab-content .tab-pane.active");
+  if (!activeTabPane) return;  // Check if activeTabPane exists
+
   const menuItems = activeTabPane.querySelectorAll("#menu .menu-items .col-lg-3");
   lastMenuItem = start;
   menuItems.forEach((menuItem, index) => {
@@ -40,8 +52,10 @@ document.querySelectorAll("#menu ul .nav-item .nav-link").forEach(element => {
 // Event listener for menu loader
 menuLoader.addEventListener("click", () => {
   const activeTabPane = document.querySelector("#menu .tab-content .tab-pane.active");
+  if (!activeTabPane) return;  // Check if activeTabPane exists
+
   const menuItems = activeTabPane.querySelectorAll("#menu .menu-items .col-lg-3");
-  lastMenuItem = lastMenuItem + 5;
+  lastMenuItem += 5;
   menuItems.forEach((menuItem, index) => {
     if (index < lastMenuItem) {
       menuItem.style.display = "block";
@@ -56,10 +70,10 @@ if (menuImages.length === menuNames.length) {
   menuImages.forEach((img, index) => {
     const src = img.getAttribute("src");
     const fileName = src.split('/').pop();
-    const nameWithoutExtension = fileName.split('.')[ 0 ];
+    const nameWithoutExtension = fileName.split('.')[0];
     const menuItemName = nameWithoutExtension.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-    menuNames[ index ].innerHTML = menuItemName;
+    menuNames[index].innerHTML = menuItemName;
   });
 } else {
   console.error("The number of menu images and menu titles do not match.");
@@ -82,16 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-// Style carousel items
-for (let i = 0; i < carouselItems.length; i++) {
-  carouselItems[ i ].style.height = "100vh";
-  carouselItems[ i ].style.backgroundImage = `url(../images/hero/hero-${i}.jpg)`;
-  carouselItems[ i ].style.backgroundColor = "rgba(0,0,0,0.8)";
-  carouselItems[ i ].style.backgroundRepeat = "no-repeat";
-  carouselItems[ i ].style.backgroundSize = "cover";
-  carouselItems[ i ].style.backgroundPosition = "center";
-}
 
 // Jump to top functionality
 document.addEventListener("DOMContentLoaded", function () {
