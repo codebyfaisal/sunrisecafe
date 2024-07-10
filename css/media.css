@@ -1,0 +1,65 @@
+@media (width<=992px) {
+    #about.full-height {
+        padding-top: 12vh;
+    }
+
+    #about {
+        background: linear-gradient(to right, #000000b6, #6363639a), url(../images/about/about-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        & * {
+            color: var(--para-white-color);
+        }
+    }
+
+    #reservation.full-height {
+        height: max-content;
+    }
+}
+
+@media (width<=576px) {
+    #about.full-height {
+        padding-top: 0;
+        height: max-content;
+    }
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand-color) #f1f1f1;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: .5rem;
+    height: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--brand-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-support-color);
+}
+
+/* For Edge, IE, and other browsers with standard CSS */
+body {
+    scrollbar-base-color: #f1f1f1;
+    scrollbar-face-color: var(--brand-color);
+    scrollbar-track-color: #f1f1f1;
+    scrollbar-arrow-color: #fff;
+    scrollbar-shadow-color: var(--brand-color);
+    scrollbar-highlight-color: #f1f1f1;
+    scrollbar-3dlight-color: #f1f1f1;
+    scrollbar-darkshadow-color: var(--brand-color);
+}

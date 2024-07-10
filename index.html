@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+  <title>Sunrise Café<i class="las la-coffee fs-1"></i></title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg shadow position-fixed w-100 z-3">
+    <div class="container p-0 m-0 mx-auto">
+      <a class="navbar-brand fw-bolder fs-1" href="./">Sunrise Café<i class="las la-coffee fs-1"></i></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="las la-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link me-2 fs-5 fw-bolder active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link me-2 fs-5 fw-bolder" href="#menu">Menu</a>
+          <a class="nav-link me-2 fs-5 fw-bolder" href="#about">About</a>
+          <a class="nav-link me-2 fs-5 fw-bolder" href="#chefs">Chefs</a>
+          <a class="nav-link me-2 fs-5 fw-bolder" href="#reviews">Reviews</a>
+          <a class="nav-link me-2 fs-5 fw-bolder" href="#reservation">Reservation</a>
+        </div>
+
+        <button type="button" class="btn btn-brand my-3 p-2 fw-bolder rounded-0">
+          Order Now
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- States -->
+  <!-- <div id="wrapper"> -->
+  <div id="wrapper" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+    <section id="home">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-0 active">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8 text-center text-white z-3">
+                  <h4 class="text-decoration-underline">
+                    Welcome to Sunrise Café<i class="las la-coffee fs-1"></i>
+                  </h4>
+                  <h1 class="fw-bolder display-4 my-3 my-lg-2">
+                    Relax with our aromatic coffee and delectable pastries.
+                  </h1>
+                  <button type="button" class="btn btn-brand-alt p-2 fw-bolder rounded-0">
+                    Reservation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-1">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8 text-center text-white z-3">
+                  <h4 class="text-decoration-underline">
+                    Welcome to Sunrise Café<i class="las la-coffee fs-1"></i>
+                  </h4>
+                  <h1 class="fw-bolder display-4 my-3 my-lg-2">
+                    Delicious and wholesome meals
+                  </h1>
+                  <button type="button" class="btn btn-brand-alt p-2 fw-bolder rounded-0">
+                    Reservation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-2">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8 text-center text-white z-3">
+                  <h4 class="text-decoration-underline">
+                    Welcome to Sunrise Café<i class="las la-coffee fs-1"></i>
+                  </h4>
+                  <h1 class="fw-bolder display-4 my-3 my-lg-2">
+                    Savor the flavors of excellence
+                  </h1>
+                  <button type="button" class="btn btn-brand-alt p-2 fw-bolder rounded-0">
+                    Reservation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="las la-angle-double-left fs-1" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="las la-angle-double-right fs-1" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="full-height">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="intro-text col-12 col-lg-6 mx-auto text-center">
+              <h1>Explore Our Menu</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                deleniti adipisci nam ipsa velit corrupti earum aliquam
+                numquam ducimus eos?
+              </p>
+            </div>
+            <!-- menu buttons -->
+            <div class="contianer">
+              <ul class="nav nav-pills mb-4 justify-content-center justify-content-md-center" id="pills-tab"
+                role="tablist">
+                <li class="nav-item m-2" role="presentation">
+                  <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                    type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                    All Items
+                  </button>
+                </li>
+
+                <li class="nav-item m-2" role="presentation">
+                  <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-all"
+                    aria-selected="false">
+                    Breakfast
+                  </button>
+                </li>
+
+                <li class="nav-item m-2" role="presentation">
+                  <button class="nav-link" id="pills-launch-tab" data-bs-toggle="pill" data-bs-target="#pills-launch"
+                    type="button" role="tab" aria-controls="pills-launch" aria-selected="false">
+                    Launch
+                  </button>
+                </li>
+
+                <li class="nav-item m-2" role="presentation">
+                  <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                    type="button" role="tab" aria-controls="pills-dinner" aria-selected="false">
+                    Dinner
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Menu cards / dishes -->
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                  tabindex="0">
+                  <!-- <h1>All Dishes</h1> -->
+                  <div class="row menu-items justify-content-evenly g-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/cheese-nut-medley-with-oranges.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/chicken-fillet-cotlets-with-green-salad-carrot.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/french-bread-with-mashed-ptotato.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/bread-fried-egg-with-salad-and-blackgrapes-with-tomatoes-sliced.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/grilled-fish-fillet-with-lemon.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/pasta-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sandwich-with-boiled-egg.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sliced-tomatoes-with-ground-pork.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/strawberry-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/toast-bread-with-blueberry.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/turkish-beef-kebab-garnished-with-spicy-tomato-sauce.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/vegetable-with-raddish-salad.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/banana-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/bbq-ribs-garnished-with-green-onions.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-breakfast" role="tabpanel"
+                  aria-labelledby="pills-breakfast-tab" tabindex="1">
+                  <!-- <h1>Breakfast Dishes</h1> -->
+                  <div class="row menu-items justify-content-evenly g-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sandwich-with-boiled-egg.png" class="menu-img drop-shadow"
+                          alt="sandwich with boiled egg" />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">Lorem ipsum dolor sit</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/strawberry-salad.png" class="menu-img drop-shadow"
+                          alt="strawberry salad" />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">Lorem ipsum dolor sit</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/toast-bread-with-blueberry.png" class="menu-img drop-shadow"
+                          alt="toast bread with blueberry" />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">Lorem ipsum dolor sit</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/banana-salad.png" class="menu-img drop-shadow" alt="banana salad" />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">Lorem ipsum dolor sit</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/bread-fried-egg-with-salad-and-blackgrapes-with-tomatoes-sliced.png"
+                          class="menu-img drop-shadow" alt="bread fried egg with salad" />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">Lorem ipsum dolor sit</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-launch" role="tabpanel" aria-labelledby="pills-launch-tab"
+                  tabindex="2">
+                  <!-- <h1>Lunch Dishes</h1> -->
+                  <div class="row menu-items justify-content-evenly g-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/banana-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/bread-fried-egg-with-salad-and-blackgrapes-with-tomatoes-sliced.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/grilled-fish-fillet-with-lemon.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/pasta-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sandwich-with-boiled-egg.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sliced-tomatoes-with-ground-pork.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/vegetable-with-raddish-salad.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                  tabindex="3">
+                  <!-- Dinner Dishes -->
+                  <div class="row menu-items justify-content-evenly g-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/bbq-ribs-garnished-with-green-onions.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/cheese-nut-medley-with-oranges.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/chicken-fillet-cotlets-with-green-salad-carrot.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/french-bread-with-mashed-ptotato.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/grilled-fish-fillet-with-lemon.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/pasta-salad.png" class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/sliced-tomatoes-with-ground-pork.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/turkish-beef-kebab-garnished-with-spicy-tomato-sauce.png"
+                          class="menu-img drop-shadow" alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                      <div class="menu-item p-2 bg-light text-center hover-shadow mt-5">
+                        <img src="./images/menu/vegetable-with-raddish-salad.png" class="menu-img drop-shadow"
+                          alt="..." />
+                        <div class="menu-detail text-black">
+                          <span class="feedback d-block fs-6 fw-bolder mb-3">
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star"></i>
+                            <i class="las la-star-half-alt"></i>
+                            <span>(4.5)</span>
+                          </span>
+                          <h5 class="menu-title">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-10 d-flex justify-content-center">
+            <button type="button" id="loader" class="btn rounded-0 btn-brand">Load more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="full-height bg-body-tertiary">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5 d-none d-lg-block">
+            <img src="./images/about/about.png" alt="About" class="object-fit-contain drop-shadow" />
+          </div>
+          <div class="col-lg-6">
+            <div class="about-text p-4 mt-5">
+              <h1>
+                About US
+                <div class="divider mb-3"></div>
+              </h1>
+
+              <p class="my-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat, excepturi asperiores magni iure eos numquam odio
+                soluta quia recusandae illum earum animi adipisci quidem. Eos
+                aliquam explicabo, exercitationem nesciunt dolore, rem
+                pariatur autem delectus recusandae perspiciatis eius modi
+                voluptatum dolores.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                quae vero ullam sed dolor voluptas soluta inventore, veniam
+                voluptates doloribus animi ipsum suscipit quo incidunt
+                adipisci provident! Porro, a voluptates.
+              </p>
+
+              <a href="#reservation" class="btn btn-brand p-2 fw-bolder rounded-0">Secure Your Table</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- chefs -->
+    <section id="chefs" class="full-height">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-12 col-lg-6 intro-text mx-auto mb-5 text-center">
+              <h1>Meet Our Chefs</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                deleniti adipisci nam ipsa velit corrupti earum aliquam
+                numquam ducimus eos?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly">
+          <div class="col-lg-3 col-sm-5 col-8 mx-2 my-3 order-2 order-md-0">
+            <div class="chef p-4 p-md-5">
+              <div class="chef-img">
+                <img src="./images/chef/chef-1.png" alt="chef" class="drop-shadow rounded-pill" />
+              </div>
+              <div class="chef-detail text-center text-nowrap pt-4">
+                <h3>John Paul</h3>
+                <p>Assistant Chef</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-5 col-8 mx-2 my-3 order-0 order-md-1">
+            <div class="chef">
+              <div class="chef-img">
+                <img src="./images/chef/chef-0.png" alt="chef" class="drop-shadow rounded-pill" />
+              </div>
+              <div class="chef-detail text-center text-nowrap pt-4">
+                <h3>James Anthony</h3>
+                <p>Chief Chef</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-5 col-8 mx-2 my-3 order-1 order-md-2">
+            <div class="chef p-3">
+              <div class="chef-img">
+                <img src="./images/chef/chef-2.png" alt="chef" class="drop-shadow rounded-pill" />
+              </div>
+              <div class="chef-detail text-center text-nowrap pt-4">
+                <h3>David Michael</h3>
+                <p>Junior Chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="full-height">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-lg-6 mx-auto mb-5 intro-text">
+              <h1>What Our Clients Say</h1>
+            </div>
+          </div>
+        </div>
+
+        <div id="review-slider" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#review-slider" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#review-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#review-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <div class="review text-center bg-black bg-opacity-50 p-4 d-flex flex-column align-items-center">
+                    <i class="las la-quote-left fw-bolder"></i>
+                    <img src="./images/reviews/review-0.png" class="d-block w-100 mb-3" alt="Chef Image" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum odio repudiandae ad voluptatum quis commodi
+                      exercitationem quasi sit vero cupiditate dolorum a
+                      itaque explicabo cum necessitatibus aspernatur alias,
+                      tempore quod?
+                    </p>
+                    <h1 class="fs-1">John</h1>
+                    <span class="feedback fs-5">
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star-half-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <div class="review text-center bg-black bg-opacity-50 p-4 d-flex flex-column align-items-center">
+                    <i class="las la-quote-left fw-bolder"></i>
+                    <img src="./images/reviews/review-1.png" class="d-block w-100 mb-3" alt="Chef Image" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum odio repudiandae ad voluptatum quis commodi
+                      exercitationem quasi sit vero cupiditate dolorum a
+                      itaque explicabo cum necessitatibus aspernatur alias,
+                      tempore quod?
+                    </p>
+                    <h1 class="fs-1">John</h1>
+                    <span class="feedback fs-5">
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star-half-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <div class="review text-center bg-black bg-opacity-50 p-4 d-flex flex-column align-items-center">
+                    <i class="las la-quote-left fw-bolder"></i>
+                    <img src="./images/reviews/review-2.png" class="d-block w-100 mb-3" alt="Chef Image" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum odio repudiandae ad voluptatum quis commodi
+                      exercitationem quasi sit vero cupiditate dolorum a
+                      itaque explicabo cum necessitatibus aspernatur alias,
+                      tempore quod?
+                    </p>
+                    <h1 class="fs-1">John</h1>
+                    <span class="feedback fs-5">
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star"></i>
+                      <i class="las la-star-half-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-control-prev" type="button" data-bs-target="#review-slider" data-bs-slide="prev">
+              <span class="las la-angle-double-left fs-1" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#review-slider" data-bs-slide="next">
+              <span class="las la-angle-double-right fs-1" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="full-height">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-12 col-lg-6 intro-text mx-auto mb-5 text-center">
+              <h1>Secure Your Table</h1>
+            </div>
+          </div>
+        </div>
+
+        <form class="row justify-content-center g-3">
+          <div class="col-11 col-lg-7">
+            <div class="row gy-3">
+              <div class="form-group col-md-6">
+                <label for="name" class="form-label m-0">Full Name</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-user-secret fs-4"></i></div>
+                  <input type="text" id="name" class="form-control" required placeholder="James Anthony" />
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="number" class="form-label m-0">Phone Number</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-phone fs-4"></i></div>
+                  <input type="number" id="number" class="form-control" required placeholder="0000 - 0000001" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-11 col-lg-7">
+            <div class="form-group">
+              <label for="email" class="form-label m-0">Email</label>
+              <div class="input-group">
+                <div class="input-group-text"><i class="las la-envelope fs-4"></i></div>
+                <input type="email" class="form-control" id="email" placeholder="e.g myname@gmail.com" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-11 col-lg-7">
+            <div class="row gy-3">
+              <div class="form-group col-sm-6">
+                <label for="date" class="form-label m-0">Date</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-calendar fs-4"></i></div>
+                  <input type="date" id="date" class="form-control" title="date" value="0001-01-01" required />
+                </div>
+              </div>
+
+              <div class="form-group col-sm-6">
+                <label for="time" class="form-label m-0">Time</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-clock fs-4"></i></div>
+                  <input type="time" id="time" class="form-control" title="time" value="00:00" required />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-11 col-lg-7">
+            <div class="row gy-3">
+              <div class="form-group col-md-6">
+                <label for="reservation-type" class="form-label m-0">Reservation Type</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-quote-left fs-4"></i></div>
+                  <select class="form-control" id="reservation-type" required>
+                    <option value="breakfast" selected>Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="other">other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="no-of-guest" class="form-label m-0">No. of Guests</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="las la-users fs-4"></i></div>
+                  <select class="form-control" id="no-of-guest" required>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="999">10+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-11 col-lg-7">
+            <div class="form-group">
+              <label for="message" class="form-label m-0">Special Message</label>
+              <textarea type="text" id="message" class="form-control" rows="4" required></textarea>
+            </div>
+          </div>
+
+          <div class="col-11 col-lg-7">
+            <div class="form-group">
+              <input type="submit" id="submit" class="form-control btn text-white fs-5 fw-bolder">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Instagram post -->
+    <section class="insta-gallery">
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="post position-relative">
+            <img src="./images/hero/hero-2.jpg" alt="insta post">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener" class="insta-btn">
+              <i class="lab la-instagram bg-white bg-opacity-75 rounded-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="post position-relative">
+            <img src="./images/hero/hero-1.jpg" alt="insta post">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener" class="insta-btn">
+              <i class="lab la-instagram bg-white bg-opacity-75 rounded-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="post position-relative">
+            <img src="./images/hero/hero-0.jpg" alt="insta post">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener" class="insta-btn">
+              <i class="lab la-instagram bg-white bg-opacity-75 rounded-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="post position-relative">
+            <img src="./images/hero/hero-1.jpg" alt="insta post">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener" class="insta-btn">
+              <i class="lab la-instagram bg-white bg-opacity-75 rounded-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container py-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-10 col-md-10">
+            <h1 class="text-white">Subscribe to Our Newsletter</h1>
+            <p>Stay up to date on all the latest news and offers from us</p>
+          </div>
+        </div>
+        <div class="row justify-content-center py-5">
+          <div class="col-12 col-md-10 col-lg-6">
+            <div class="row justify-content-center g-0">
+              <div class="col-10 col-sm-9">
+                <input type="email" name="newsletter" placeholder="Enter Your Email Address"
+                  class="email-input border-0 bg-white p-3 fw-bolder w-100">
+              </div>
+              <div class="col-10 col-sm-3">
+                <input type="button" name="subscribe" value="Subscribe"
+                  class="subscribe-button text-white border-0 p-3 fw-bolder w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container mt-5 position-relative">
+      <div class="row justify-content-center justify-content-lg-between align-items-start gy-3 text-center">
+
+        <div class="col-10 col-md-8 col-lg-4">
+          <div class="contact-us mb-4">
+            <h3>Contact US</h3>
+            <form class="d-grid gap-2">
+              <div class="form-group">
+                <input type="text" class="form-control p-2 rounded-0" title="name" placeholder="Full Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control p-2 rounded-0" title="name" placeholder="Email">
+              </div>
+
+              <div class="form-group">
+                <textarea title="message" class="form-control p-2 rounded-0" placeholder="Message" rows="3"></textarea>
+              </div>
+
+              <button type="button"
+                class="form-control btn-brand-alt py-2 px-5 rounded-0 text-white fw-bolder fs-5">Send</button>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="contacts mb-4">
+            <h3>Contacts</h3>
+            <p class="m-0">Email: info@sunrise.com</p>
+            <p class="m-0">Phone: 0000 - 0000001</p>
+          </div>
+
+          <div class="address mb-4">
+            <h3>Address</h3>
+            <p class="m-0">1234 Street Name City, AA 99999</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <div class="working-hours mb-4">
+            <h3>Working Hours</h3>
+            <p class="m-0 text-nowrap">
+              Mon-Sat<span class="mx-3"></span>05 AM - 11 PM
+            </p>
+            <p class="m-0 text-nowrap">
+              Sunday <span class="mx-3"></span>06 AM - 12 PM
+            </p>
+          </div>
+
+          <div class="social-media mb-4">
+            <h3>Follow</h3>
+            <a href="https://www.instagram.com" title="Instagram" target="_blank" rel="noopener"><i
+                class="lab la-instagram fs-1 fw-lighter bg-white text-black mx-1"></i></a>
+            <a href="https://www.x.com" title="X" target="_blank" rel="noopener"><i
+                class="lab la-twitter fs-1 fw-lighter bg-white text-black mx-1"></i></a>
+            <a href="https://www.youtube.com" title="Youtube" target="_blank" rel="noopener"><i
+                class="lab la-youtube fs-1 fw-lighter bg-white text-black mx-1"></i></a>
+            <a href="https://www.medium.com" title="Medium" target="_blank" rel="noopener"><i
+                class="lab la-medium fs-1 fw-lighter bg-white text-black mx-1"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row border-2 border-top border-white p-2">
+        <p class="text-center fw-bolder mt-3">© 2024 Sunrise Café<i class="las la-coffee fs-4"></i></p>
+      </div>
+
+      <div class="jump-to-top position-fixed end-0 bottom-0 mb-3 me-3 pointer-event btn-brand-alt rounded-pill">
+        <i class="las la-arrow-circle-up fs-1 text-white"></i>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
